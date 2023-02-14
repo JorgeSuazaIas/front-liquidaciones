@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
+import { Employee } from 'src/app/models/employee.model';
 import { AuthService } from 'src/app/services/auth.service';
 
 
@@ -41,7 +42,8 @@ export class RegisterEmployeeComponent {
   }
 
   onSave() {
-    this.authService.registerEmployee(this.registerForm.value).subscribe(result => {
+    console.log(this.registerForm.value)
+    this.authService.registerEmployee(this.registerForm.value as Employee).subscribe(result => {
       this.registerForm.reset();
       alert("Usuario creado exitosamente")
     });

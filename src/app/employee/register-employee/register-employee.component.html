@@ -1,5 +1,5 @@
 <div class="l container">
-  <form class="col-md-4 col-sm-4 col-lg-4 mx-auto mt-4 p-4 border" [formGroup]="registerForm"> 
+  <form class="col-md-4 col-sm-4 col-lg-4 mx-auto mt-4 p-4 border" [formGroup]="registerForm">
       <h1 class="title text-center">Registrar empleado</h1>
       <div class="form-group">
           <label for="name">Nombre</label>
@@ -27,7 +27,7 @@
               placeholder="salario" />
       </div>
       <div class="row justify-content-center px-3 pt-3">
-          <button class="btn btn-primary btn-block" type="submit">Register</button>
+          <button class="btn btn-primary btn-block" type="submit" (click)="onSave()">Register</button>
       </div>
       <div class="row justify-content-center px-3 pt-3">
           <button class="btn btn-dark btn-block" type="submit">Cancel</button>
