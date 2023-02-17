@@ -17,7 +17,7 @@ export class AuthService {
   constructor(public http: HttpClient) { }
 
   registerEmployee(registerParams: Employee): Observable<Employee> {
-    return this.http.post<Employee>(`${this.BASE_URL}/employee`, registerParams, {
+    return this.http.post<Employee>(`${this.BASE_URL}/employees`, registerParams, {
       headers: this.headers
     });
   }

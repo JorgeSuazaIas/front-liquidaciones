@@ -1,9 +1,9 @@
 export class Employee {
   constructor(
-    public name?: string,
-    public docNumber?: number,
-    public startDate?: string,
-    public position?: string,
-    public salary?: number
+    public employeeName?: string,
+    public employeeDocNumber?: number,
+    public employeeStartDate?: Date,
+    public employeeSalary?: number,
+    public employeeProfession?: string,
   ) {}
 }

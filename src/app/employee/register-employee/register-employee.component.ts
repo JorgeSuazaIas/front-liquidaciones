@@ -22,21 +22,21 @@ export class RegisterEmployeeComponent {
 
   //Declarando el formulario de Angular
   registerForm = new FormGroup({
-    name: new FormControl(''),
-    docnumber: new FormControl(''),
-    startdate: new FormControl(''),
-    position: new FormControl(''),
-    salary: new FormControl('')
+    employeeName: new FormControl(''),
+    employeeDocNumber: new FormControl(''),
+    employeeStartDate: new FormControl(''),
+    employeeProfession: new FormControl(''),
+    employeeSalary: new FormControl('')
   });
 
 
   createRegisterForm(): void {
     this.registerForm = this.formBuilder.group({
-      name: ['',[Validators.required]],
-      docnumber: ['',[Validators.required]],
-      startdate:  ['',[Validators.required]],
-      position:  ['',[Validators.required]],
-      salary:  ['',[Validators.required]]
+      employeeName: ['',[Validators.required]],
+      employeeDocNumber: ['',[Validators.required]],
+      employeeStartDate:  ['',[Validators.required]],
+      employeeProfession:  ['',[Validators.required]],
+      employeeSalary:  ['',[Validators.required]]
       //[Validators.required] Valida que cada input sea obligatorio
     });
   }
