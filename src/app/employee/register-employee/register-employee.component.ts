@@ -10,6 +10,9 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./register-employee.component.css']
 })
 export class RegisterEmployeeComponent {
+
+  
+
   constructor(
     private formBuilder: FormBuilder,
     public authService: AuthService
@@ -48,5 +51,7 @@ export class RegisterEmployeeComponent {
       alert("Usuario creado exitosamente")
     });
   }
+
+
 
 }

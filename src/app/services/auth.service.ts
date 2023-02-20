@@ -21,4 +21,12 @@ export class AuthService {
       headers: this.headers
     });
   }
+
+  getAllEmployees(): Observable<Employee[]>{
+    return this.http.get<Employee[]>(`${this.BASE_URL}/employees`, {
+      headers: this.headers
+    });
+  }
+
+  
 }
